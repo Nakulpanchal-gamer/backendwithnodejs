@@ -12,4 +12,5 @@ app.use(cors({
 app.use(express.json({limit: "10mb"}))
 app.use(express.uelencoded({extended: true, limit:"10mb"}))
 app.use(express.static('public'))
+app.use(cookieParser())
 export { app }
